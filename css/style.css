@@ -6,9 +6,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --textColor:#14A800;
+}
 header{
     position: fixed;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, .2);
     top:0;
     left: 0;
     width: 100%;
@@ -19,7 +22,7 @@ header{
     z-index: 999;  
 }
 header.sticky{
-    background: crimson;
+    background: #14A800;
     padding: 10px 100px;
 }
 header .brand{
@@ -46,7 +49,7 @@ header .navigation a{
   border-radius: 5px;
 }
 header .navigation a:hover{
-    color:crimson ;
+    color:#14A800 ;
     background: #fff;
 }
 /* Section */
@@ -61,7 +64,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/bg.png) no-repeat;
+    background:url(../images/head.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -85,7 +88,7 @@ section{
     position: relative;
 }
 .animated-text h3{
-    color: crimson;
+    color: #14A800;
     font-size: 52px;
     font-weight: 700 ;
     line-height: 70px;
@@ -113,7 +116,7 @@ section{
 }
 .btn{
     color: #fff;
-    background: crimson;
+    background: #14A800;
     font-size: 17px;
     font-weight: 600;
     display: inline-block;
@@ -144,7 +147,7 @@ section{
 }
 .section-title{
     position: relative;
-    color: crimson;
+    color: #14A800;
     font-size: 38px;
     font-weight: 800;
     margin-bottom: 60px;
@@ -156,7 +159,7 @@ section{
     left: 50%; 
     width: 140px;
     height: 4px;
-    background: crimson;
+    background: #14A800;
     transform: translateX(-50%);
 
 }
@@ -168,7 +171,7 @@ section{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: crimson;
+    background: #14A800;
     transform: translateX(-50%);
 
 }
@@ -304,7 +307,7 @@ section{
     text-align: center;
 }
 .services .card .services-icon{
-    color: crimson;
+    color: #14A800;
     font-size: 120px;
     transition: .5s all ease;
 }
@@ -315,7 +318,7 @@ section{
     text-align: center;
 }
 .services .card .info h3{
-    color: crimson;
+    color: #14A800;
     font-size: 20px;
     font-weight: 700;
     margin: 10px;
@@ -384,7 +387,7 @@ section{
     border-radius: 10px;
 }
 .contact .card .contact-icon{
-    color: crimson;
+    color: #14A800;
     font-size:60px;
     text-align: center;
     transition: .5s all ease;
@@ -436,7 +439,7 @@ section{
 }
 .contact-form .input-box .send-btn{
     color: #fff;
-    background: crimson;
+    background: #14A800;
     display: inline-block;
     font-size: 19px;
     font-weight: 500;
@@ -503,7 +506,7 @@ section{
         border-radius: 20px;
     }
     header .navigation a:hover{
-        background: crimson;
+        background: #14A800;
         color: #fff;
     }
 
