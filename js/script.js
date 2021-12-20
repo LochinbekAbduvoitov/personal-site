@@ -9,19 +9,27 @@ window.addEventListener('DOMContentLoaded', function () {
   menuBtn.onclick = () => {
     navigation.classList.toggle("active");
   };
+
   
-  const typed=document.querySelector('.typed');
-  typed={
-    strings:[
+  const yozuv=document.querySelector('.typed');
+  let options={
+    strings: [
       'Lochinbek ',
       'Abduvoitov'
     ],
-    typedSpeed:60,
+    typeSpeed:70,
     startDelay:500,
+    backDelay: 1000,
     backSpeed:40,
     loop:true,
     loopCount:Infinity,
+    showCursor: true,
+    cursorChar: '|',
+    autoInsertCss: true,
+    
   };
+  let typed=new Typed(yozuv,options)
+  console.log(typed);
  
 
   

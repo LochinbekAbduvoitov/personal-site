@@ -101,6 +101,18 @@ section {
   background-position: center;
   background-attachment: fixed;
 }
+.main .typed{
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 500;
+}
+.main .type-text{
+  display: flex;
+  flex-direction: row;
+  font-size: 6rem;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+}
 .main .content {
   max-width: 80rem;
 }
