@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let options={
     strings: [
       'Lochinbek ',
-      'Abduvoitov'
+      'Abduvoitov','Junior developer'
     ],
     typeSpeed:70,
     startDelay:500,
