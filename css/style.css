@@ -178,7 +178,15 @@ section {
   color: #fff;
   font-size: 2.5rem;
   margin-right: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
+.media-icon a:hover{
+  background-color: var(--textColor);
+
+}
+
 /* Section Abuot Me */
 .title {
   width: 100%;
@@ -619,4 +627,36 @@ section {
   .skills .content .col-right {
     margin-top: 4rem;
   }
+}
+
+.scrollToTop-btn{
+  z-index:999;
+  position: fixed;
+  background: var(--textColor);
+  color: #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+  right: 0;
+  bottom: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 4.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.scrollToTop-btn.scrollactive{
+  right: 2rem;
+  opacity: 1;
+}
+.reveal{
+  position: relative;
+  transform:translateY(5rem);
+  opacity: 0;
+  transition: all 1.3s ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
