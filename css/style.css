@@ -28,6 +28,7 @@ html {
   background: rgb(15,218,42);
   background: linear-gradient(90deg, rgb(15, 128, 30) 0%, rgb(66, 160, 99) 50%, rgb(49, 136, 61) 100%);
   z-index: 9999;
+  transition: all 0.4s linear;
 }
 .loader h1{
   color: #fff;;
@@ -134,7 +135,7 @@ header {
   transition-duration: 0.5s;
   z-index: 999;
 }
-.container {
+.container-main {
   width: 100%;
   position: relative;
   /* height: 100vh; */
@@ -437,6 +438,7 @@ section {
   width: 50%;
   background: #6b35b3;
 }
+/* SERVECES */
 .services .content {
   display: flex;
   flex-direction: row;
@@ -458,11 +460,15 @@ section {
   box-shadow: 0 0.5rem 2.5rem rgba(1 1 1/15%);
   border-radius: 1rem;
   text-align: center;
+  box-sizing: border-box;
 }
 .services .card .services-icon {
   color: var(--textColor);
   font-size: 12rem;
   transition: 0.5s all ease;
+}
+.services .content .card:hover{
+  border: 1px solid var(--textColor);
 }
 .services .card .services-icon:hover {
   transform: translateY(-10px);
@@ -487,6 +493,7 @@ section {
   flex-wrap: wrap;
   gap: 3.5rem;
   margin-top: 2rem;
+  overflow: hidden;
 }
 .work .content .card {
   flex: 1 1 25rem;
@@ -498,6 +505,25 @@ section {
   border-radius: 1rem;
   overflow: hidden;
 }
+.work .content .angle-box{
+  height: 26rem;
+  width: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.work .content .angle-box:hover{
+  background-color: #fff;
+  background: #fff linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
+  color: #000;
+}
 .work .content .card-img img {
   position: relative;
   top: 0;
@@ -508,8 +534,12 @@ section {
   border-radius: 1rem;
   transition: 0.5s all ease;
 }
+.img-caru{
+  width: 70rem;
+  height: 60vh;
+}
 .work .content .card-img img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 /* contact services */
 
@@ -529,7 +559,9 @@ section {
 }
 .contact .row .card {
   background: #fff;
-  width: 24rem;
+  gap: 3.5rem;
+  width: 28rem;
+  height: 26rem;
   margin: 2rem;
   padding: 2.5rem;
   display: flex;
@@ -538,19 +570,26 @@ section {
   flex-direction: column;
   box-shadow: 0 0.5rem 2.5rem rgba(1 1 1/15%);
   border-radius: 1rem;
+  transition: all 1s ease;
+  box-sizing: border-box;
 }
 .contact .card .contact-icon {
   color: var(--textColor);
-  font-size: 6rem;
+  font-size: 8rem;
   text-align: center;
   transition: 0.5s all ease;
+}
+.contact .card:hover{
+  border: 1px solid var(--textColor);
+  /* transition: all 1s ease; */
+  /* transform: translateY(-0.3rem); */
 }
 .contact .card:hover .contact-icon {
   transform: translateY(-1rem);
 }
 .contact .card .info h3 {
   color: #111;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   margin: 1rem;
 }
@@ -568,7 +607,7 @@ section {
 }
 .contact-form {
   color: #111;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 4rem;
 }

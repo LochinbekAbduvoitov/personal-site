@@ -17,7 +17,7 @@
        <div class="scrollToTop-btn">
       <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
-    <div class="container">
+    <div class="container-main">
     <!-- Header -->
     <header>
       <a href="#" class="brand">Lochinbek</a>
@@ -54,11 +54,11 @@
         <div class="media-icon">
           <a href="https://www.facebook.com/Lochinbekweb/"><i class="fa fa-facebook"></i></a>
           <a href="https://www.instagram.com/lochinbekweb/"><i class="fa fa-instagram"></i></a>
-          <!-- <a href="https://twitter.com/LAbduvoitov"><i class="fa fa-twitter"></i></a> -->
+          <a href="https://twitter.com/LAbduvoitov"><i class="fa fa-twitter"></i></a>
           <a href="https://t.me/developerlochinbek/"><i class="fa fa-telegram"></i></a>
           <a href="https://github.com/LochinbekAbduvoitov"><i class="fa fa-github" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/lochinbek-abduvoitov-049356222/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <!-- <a href="https://www.youtube.com/channel/UC7qiNwN2uS__BkCrdD_Heag"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> -->
+          <a href="https://www.youtube.com/channel/UC7qiNwN2uS__BkCrdD_Heag"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -228,53 +228,60 @@
       <div class="title reveal">
         <div class="section-title">My Work</div>
       </div>
-      <div class="content">
-        <div class="card reveal">
+      <div class="content  slide-content">
+        <div class="angle-box">
+          <i class="fa fa-angle-left  fa-5x  angle-box-left" aria-hidden="true"></i>
+        </div>
+        <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img1.jfif" alt="" />
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img2.jfif" alt="" />
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img3.jfif" alt="" />
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img4.png" alt="" />
           </div>
-        </div>
-        <div class="card reveal">
+        </div> 
+        <!-- <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img5.jfif" alt="" />
           </div>
-        </div>
-        <div class="card reveal">
+        </div> -->
+        <!-- <div class="card reveal slide-card">
           <div class="card-img">
             <img src="./images/img6.jfif" alt="" />
           </div>
-        </div>
-        <div class="card reveal">
+        </div> -->
+        <!-- <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img7.png" alt="" />
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal  slide-card">
           <div class="card-img">
             <img src="./images/img8.png" alt="" />
           </div>
-        </div>
-        <div class="title reveal">
+        </div> -->
+        <!-- <div class="title reveal  slide-card">
           <a href="#" class="btn">See all</a>
+        </div>-->
+        <div class="angle-box  angle-box-right">
+          <i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
         </div>
+        
       </div>
     </section>
-
+   
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="title reveal">
@@ -321,19 +328,21 @@
         </div>
         <div class="row">
           <div class="contact-form reveal">
+            <form action="" onsubmit=" return sendtelegram()">
             <h3>Send messege</h3>
             <div class="input-box">
-              <input type="text" placeholder="Name" />
+              <input type="text" name="name" id="name" placeholder="Name"  autocomplete="off"/>
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Email" />
+              <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" />
             </div>
             <div class="input-box">
-              <textarea cols="80" rows="8" placeholder="Messege"></textarea>
+              <textarea name="message" id="message" cols="80" rows="8" placeholder="Message" autocomplete="off"></textarea>
             </div>
             <div class="input-box">
-              <input type="submit" class="send-btn" value="send" />
+              <input type="submit" class="send-btn" value="send"  id="btn"/>
             </div>
+            </form>
           </div>
         </div>
       </div>
@@ -341,7 +350,7 @@
 
     <footer class="footer">
       <span class="footer-title">Lochinbek Abduvoitov</span>
-      <p>Copyright 2021 All Rights Reserved</p>
+      <p>Copyright  &copy;2021 All Rights Reserved</p>
     </footer>
   </div>
 
