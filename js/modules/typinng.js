@@ -17,8 +17,8 @@ function typed(){
       autoInsertCss: true,
       
     };
-    // let typed=new Typed(yozuv,options)
-    // console.log(typed); 
+    let typed=new Typed(yozuv,options)
+    console.log(typed); 
   
 }
 
