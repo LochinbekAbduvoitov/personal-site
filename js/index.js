@@ -4,14 +4,16 @@ window.addEventListener('DOMContentLoaded', () => {
           animated=require('./modules/animated'),
           navigation=require('./modules/navigation'),
           scroll=require('./modules/scrol'),
-          typed=require('./modules/typinng');
+          typed=require('./modules/typinng'),
+          contact=require('./modules/contact')
 
 
     loader();
     animated();
     navigation();
     scroll();
-    typed();  
+    typed(); 
+    contact(); 
   
 
 });

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lochinbek Abduvoitov</title>
     <!-- <link rel="icon" href="./images/logo.jpg" /> -->
+    <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fonts/font-awesome.css" />
   </head>
@@ -52,9 +53,7 @@
         <div class="content">
           <h2>
             Welcome! <br />
-            <h1 class="type-text">
-              I'm &nbsp;<span class="typed"></span>
-            </h1>
+            <h1 class="type-text">I'm &nbsp;<span class="typed"></span></h1>
           </h2>
           <div class="animated-text">
             <h3>Freelancer</h3>
@@ -101,7 +100,7 @@
             </div>
           </div>
           <div class="column col-right reveal">
-            <h2 class="content-title">Hey there! I`m Lochinbek Abduvoitov </h2>
+            <h2 class="content-title">Hey there! I`m Lochinbek Abduvoitov</h2>
             <p class="paragraph-text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur aliquid molestiae molestias veniam totam ipsum laborum
@@ -109,14 +108,6 @@
               mritatis ex eard. Rem repellendus nisi rerum illum fuga
               repudiandae incidunt saepe labore odit
             </p>
-            <!-- <br />
-            <p class="paragraph-text">
-              nesciunt necessitatibus, natus non recusandae id, exercitationem
-              inventore explicabo iususamus praesent veritm cupiditate veritatis
-              ex earum molestias e, iste optio eius quod harum recusandae
-              tenetur aspernatur architecto sapiente, facere eveniet incidunt
-              ipsum praesentium earum odit.
-            </p> -->
             <a href="#" class="btn">See more</a>
           </div>
         </div>
@@ -194,13 +185,7 @@
       <section class="services" id="services">
         <div class="title reveal">
           <div class="section-title">My Services</div>
-          <p>
-            <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            nobis distinctio ipsam. Quod optio beatae sapiente placeat esse
-            tempora ratione pariatur maiores quibusdam distinctio ad aspernatur,
-            voluptatem voluptas eos fugiat animi maxime facere harum quos
-            obcaeca -->
-          </p>
+          <!-- <p>          </p> -->
         </div>
         <div class="content">
           <!-- <div class="card reveal">
@@ -221,7 +206,7 @@
             </div>
             <div class="info">
               <h3>Web Developer</h3>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+              <!-- <p>  </p> -->
             </div>
           </div>
           <div class="card reveal">
@@ -230,7 +215,7 @@
             </div>
             <div class="info">
               <h3>Instructor</h3>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+              <!-- <p>  </p> -->
             </div>
           </div>
           <div class="card reveal">
@@ -239,7 +224,7 @@
             </div>
             <div class="info">
               <h3>Youtuber</h3>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+              <!-- <p> </p> -->
             </div>
           </div>
         </div>
@@ -323,8 +308,8 @@
                 <i class="fa fa-globe"></i>
               </div>
               <div class="info">
-                <h3>Address</h3>
-                <span>lochinbek.com</span>
+                <h3>Web site</h3>
+                <span>www.lochinbek.uz</span>
               </div>
             </div>
           </div>
@@ -339,15 +324,17 @@
                     id="name"
                     placeholder="Name"
                     autocomplete="off"
+                    required
                   />
                 </div>
                 <div class="input-box">
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     id="email"
                     placeholder="Email"
                     autocomplete="off"
+                    required
                   />
                 </div>
                 <div class="input-box">
@@ -358,6 +345,9 @@
                     rows="8"
                     placeholder="Message"
                     autocomplete="off"
+                    required
+                    minlength="10"
+                    maxlength="500"
                   ></textarea>
                 </div>
                 <div class="input-box">
@@ -377,5 +367,6 @@
 
     <script defer src="./js/bundle.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
