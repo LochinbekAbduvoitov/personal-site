@@ -325,27 +325,27 @@ section {
   border-radius: 0.2rem;
 }
 .skills .html::before {
-  width: 90%;
+  width: 95%;
   background: #e35025;
 }
 .skills .css::before {
-  width: 60%;
+  width: 90%;
   background: #0a6aa7;
 }
 .skills .javascript::before {
-  width: 65%;
+  width: 80%;
   background: #bc871c;
 }
 .skills .jquery::before {
-  width: 30%;
+  width: 50%;
   background: #2fa7e3;
 }
 .skills .bootstrap::before {
-  width: 60%;
+  width: 80%;
   background: #6b35b3;
 }
 .skills .nodejs::before {
-  width: 40%;
+  width: 50%;
   background: #095f1c;
 }
 /* SERVECES */
@@ -562,6 +562,14 @@ section {
     cursor: pointer;
   }
 
+  .main .typed {
+    font-size: 2rem;
+  }
+  .main .type-text{
+    font-size: 3rem;
+    /* font-weight: 100; */
+  }
+
   .menu-btn {
     position: relative;
     z-index: 200;
@@ -575,6 +583,12 @@ section {
     background: #fff;
     transform-origin: 0.4rem;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .media-icon a {
+    font-size: 2rem;
+    margin-right: 1rem;
+    padding: 0.5rem 0.5rem;
   }
 
   .checkbox:checked + label span:first-of-type {
@@ -656,6 +670,8 @@ section {
   .skills .content .col-right {
     margin-top: 4rem;
   }
+  
+  
 }
 
 .scrollToTop-btn {
