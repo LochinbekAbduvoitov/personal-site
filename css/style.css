@@ -364,6 +364,7 @@ section {
   width: 28rem;
   margin: 1rem;
   padding: 2.5rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -371,14 +372,16 @@ section {
   border-radius: 1rem;
   text-align: center;
   box-sizing: border-box;
+  transition: all 1s ease;
+}
+.services .content .card:hover {
+  
+  border: 1px solid var(--textColor);
 }
 .services .card .services-icon {
   color: var(--textColor);
   font-size: 12rem;
   transition: 0.5s all ease;
-}
-.services .content .card:hover {
-  border: 1px solid var(--textColor);
 }
 .services .card .services-icon:hover {
   transform: translateY(-10px);
